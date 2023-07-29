@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>TODO LIST</title>
+    </head>
+    <body>
+        <center>
+        <h1>ToDo List</h1>
+    
+        <form >
+            <label for="task-input"><b>Enter new Task</b>
+            </label>
+            <input type="text" id="task-input" name="task-input"/>
+            <button><b>Add Task</b></button>
+        </form>
+    
+        <ul id="task-list">
+    
+        </ul>
+       </center>
+        <script>
+            const form = document.querySelector('form');
+            const taskList = document.querySelector('#task-list');
+    
+            function addTask(task)
+            {
+                const listItem = document.createElement('l1');
+                listItem.innerHTML = `<input  type="checkbox" /> <span>${task}</span> <button>Delete</button>`;
+                taskList.appendChild(listItem);
+            }    
+            
+            form.addEventListener('submit',(event)=>{
+                event.preventDefault();//prevaent page from refresing
+                const input = document.querySelector('#task-input');
+                const task = input.value;
+                addTask(task);
+                input.value = '';
+            })
+
+            taskList.addEventListener("click",(event)=>
+            {
+                if(event.target.tagName === 'BUTTON')
+                {
+                const listItem = event.target.parentElement;
+                taskList.removeChild(listItem);
+                }
+            })
+        </script>
+</body>
+</html>

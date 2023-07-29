@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+body{
+    margin: 20px;
+    padding: 20px;
+}
+
+h1{
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 30px;
+    color: coral;
+    
+}
+form{
+    margin: 30px;
+    padding: 20px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    display: inline-flex;
+}
+form button{
+    color: beige;
+    background-color: black;
+    height: 50px;
+    width: 70px;
+    border-radius: 50%;
+}
+button:hover{
+    background-color: coral;
+}
+form label{
+    margin: 10px;
+    padding: 10px;
+    color: coral;
+    font-size: 20px;
+}
+form input{
+    
+    margin: 5px;
+    display: flex;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+ul l1{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding:2px;
+    display:block;
+  
+   background-color: aliceblue;
+}
+
+ul l1 span{
+    margin-left: 40px;
+    margin-right: 60px;
+    font-family:cursive;
+
+}
+ul l1 button{
+    margin-left: 20px;
+    color: beige;
+    background-color: coral;
+    height: 40px;
+    width: 70px;
+}
+ul l1 button:hover{
+    background-color: red;
+}
+
